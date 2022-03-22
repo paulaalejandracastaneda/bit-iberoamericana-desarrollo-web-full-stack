@@ -3,11 +3,12 @@
     <head>
         <!-- la info que ven los navegadores-->
         <TITLE>Students INFO</TITLE>
+        <link rel="stylesheet" href="./style.form.study.css">
     </head>
     <body>
         <!-- Contenedores tipograficos -->
         <h1>Start now </h1>
-        <h2>Best academy, best bootcamp</h2>
+        <h2>The best academy, The best bootcamp, Better opportunities!</h2>
         <form action="ejemplo.php" method="get">
             <p>Name: <input type="text" name="name" size="40" placeholder="Type your name"></p>
             <p>Email: <input type="number" name="email" min="@" placeholder="Type your email address"></p>
@@ -16,6 +17,18 @@
               <input type="radio" name="hm" value="bcfsa"> Bootcamp FullStack Avanzado
             </p>
             <p>Location:<input type="text" name="country" min="letter" placeholder="Typer your country of residence"></p>
+            <label for="start">Date of birth:</label>
+            <input type="date" id="start" name="trip-start"
+                   value="1900-01-01"
+                   min="1900-01-01" max="2022-05-01">
+
+           <h3>Time to study daily</h3>
+           <p id="Countdown"></p>
+           <button id="btnIncrement">+</button>
+           <button id="btnDecrement">-</button>
+           <script src="script.study.js"></script>
+            
+                   
             <p>
               <input type="submit" value="Send">
               <input type="reset" value="Delete">
